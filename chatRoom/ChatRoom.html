@@ -1,0 +1,48 @@
+<?php
+/*
+ * ChatRoom.php
+ * Created on 2013-4-2
+ * JoJo
+ */
+define('ROOT',dirname(dirname(__FILE__)));
+require_once ROOT.'/lib/dao/GroupDao.php';
+header("Content-Type:text/html; charset=utf-8");
+session_start();
+/*********************OutTimeMsgCheck************************/
+$num = 0;
+ if(isset($_GET['stu_id'])){
+ 	$_SESSION['stu_id'] = $_GET['stu_id'];
+ 	$arr = GroupDao::getGroups($_SESSION['stu_id']);
+ 	$num = GroupDao::getMemberNums($arr[0]);
+ }
+ ?>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>讨论组</title>
+	<link type="text/css" rel="stylesheet" href="css/chatRoom.css" />
+</head>
+<body>
+	<div id="header">
+		<h4 id="groupTitle" class="fLeft">组号:<?php echo$arr[0];?></h4><!-- :PHP insert -->
+		<div id="groupMembers" class="fRight"><?php echo$num;?></div><!-- :PHP insert -->
+	</div>
+	
+	<div id="content"></div>
+	
+	<div id="footer">
+		<div id="sender">
+			<textarea id="input"></textarea>
+			<input type="button" id="send" value="send"/>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/functionExecutionLib_group.js"></script>
+	<script type="text/javascript" src="js/setAjax_group.js"></script>
+	<script type="text/javascript" src="js/parameter_group.js"></script>
+</body>
+</html>
