@@ -1,0 +1,180 @@
+﻿/* default
+-------------------------------------------------*/
+body {
+	margin: 0;
+	background: #fff;
+	font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+.fLeft {
+	float: left;
+}
+
+.fRight {
+	float: right;
+}
+
+.fClear {
+	clear: both;
+}
+
+.border{
+	border: 1px solid #000;
+}
+
+* {
+	border: 0;
+}
+
+/* 引用样式
+-------------------------------------------------*/
+h2#logo {
+	height: 30px;
+	width: 150px;
+	margin-left: 10px;
+	margin-top: 15px;
+	background: url("images/logo.png") no-repeat;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header button {
+	width: 80px;
+	height: 100%;
+	border-left: 1px solid #4285b1;
+	border-right: 1px solid #005b98;
+	color: #fff;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: all 0.3s ease-out;
+}
+
+header button:hover{
+	background: rgb(25,124,189);
+}
+
+header button.active{
+	background: rgb(4, 97, 159);
+}
+/* 字幕 变换样式
+-------------------------------------------------*/
+.mark .key {
+	color: red;
+	font-weight: bold;
+	background: rgba();
+	height: 25px;
+}
+
+.cover .key {
+	color: rgba(0,0,0,.01);
+	height: 25px;
+	border-bottom: 2px solid #f00;
+}
+/* Mr Q
+------------------------------------------------ */	
+.mrQ {
+
+}
+
+.oldQuestion .mrQ {
+	clear: left;
+}
+
+
+	#mrQContent #question {
+		float: left;
+		margin: 60px 0 0 20px;
+		width: 50%;
+		font-size: 160%;
+	}
+	#mrQContent #limitTime {
+		float: right;
+		margin-top: 60px;
+		width: 20%;
+		font-size: 300%;
+	}
+
+#aQuestion {
+	min-height: 100%;
+}
+
+#aQuestion #guysAnswer {
+	clear: both;
+}
+
+.oldQuestion {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.oldQuestion .guysAnswer {
+	clear: both;
+	padding-bottom: 30px;
+	
+}
+		/* 学生答案的样式 */
+		p.stuClass, p.stuName ,p.stuAnswer {
+			margin: 0px;
+		}
+		p.stuClass {
+			float: left;
+			margin-top: 10px;
+			margin-left: 30px;
+			font-size: 23px;
+			
+		}
+		p.stuName {
+			float: left;
+			margin-top: 10px;
+			margin-left: 30px;
+			font-size: 23px;
+		}
+		p.stuAnswer {
+			clear: both;
+			margin: 0 15px;
+			padding-top: 15px;
+			font-size: 40px;
+		}
+		
+#guysAnswer .aAns ,.guysAnswer .aAns{
+	float: left;
+	/*display: inline-block;*/
+	overflow: hidden;
+	height: 40%;
+	width: 20%;
+	
+	padding: 3px;
+	margin: 10px 15px 20px 15px;
+	background: #ffc;
+	box-shadow: 0 0 6px #000;
+}
+
+.guysAnswer .aAns{
+	background-color: rgba(206,206,206,.1);
+}
+
+.ansBingo {
+	background-image: url(images/ansBingo_green.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.aAns#displayOutstanding {
+	position: fixed;
+	top:160px;
+	left: 80px;
+	height: 60%;
+	width: 70%;
+	z-index: 200;
+	color: #eee;
+	border-radius: 6px;
+	background: rgba(255,255,238,.01);
+	box-shadow: 0px 0px 5px rgb(255,255,255) inset,10px 10px 40px rgb(0,0,0);
+	padding: 20px;
+}
+
+.aAns  .avatar {
+	float: left;
+	width: 83px;
+	height: 83px;
+}

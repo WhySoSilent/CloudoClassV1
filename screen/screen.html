@@ -1,0 +1,452 @@
+﻿<html>
+<head>
+	<title>移动语言学习互动平台</title>
+	
+	<link type="text/css" rel="stylesheet" href="css/screen/layout.css" /><!-- 布局相关 -->
+	<link type="text/css" rel="stylesheet" href="css/screen/subassembly.css" /><!-- 组件相关 -->
+	<link type="text/css" rel="stylesheet" href="css/screen/videoControl.css" /><!-- video相关 -->
+	<link type="text/css" rel="stylesheet" href="css/screen/quote.css" /><!-- 引用样式 -->
+</head>
+<body>
+	<header>
+		<h2 id="logo" class="fLeft"></h2>
+		<button id="switchMrQ" class="fLeft pageSwitch" data-buttonRole="MrQ">Mr Q</button>
+		<button id="switchVideo" class="fLeft pageSwitch" data-buttonRole="Video">Video</button>
+		<button id="switchGroup" class="fLeft pageSwitch" data-buttonRole="Group">Group</button>
+		<button id="switchWritePad" class="fLeft pageSwitch" data-buttonRole="WritePad">WritePad</button>
+		<button id="switchPPT" class="fLeft pageSwitch" data-buttonRole="PPT">PPT</button>
+		<button id="toFullScreen" class="fLeft">全屏</button>
+		<!--button id="testButtom1" class="fLeft">Cover</button>
+		<button id="testButtom2" class="fLeft">Toggle</button>
+		<button id="testButtom3" class="fLeft">《《</button>
+		<button id="testButtom4" class="fLeft">》》</button>
+		<input id="timeInput" type="text" /><button id="setTime" class="fLeft">set</button-->
+	</header>
+
+	<div id="content" class="">
+		<!-- 收集答案功能的视图容器 -->
+		<div id="mrQPage" class="aPage">
+			<!-- mrQ所在容器 -->
+			<div id="mrQContent" class="aContent">
+				<div id="aQuestion">
+					<div class="mrQ"><h2 id="question">MrQ:</h2><h2 id="limitTime">00:00</h2><div class="clearFloat"></div></div>
+					<div id="guysAnswer">
+						<div class="aAns" data-sid=120126124>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第八组</p>
+							<p class="stuName">曹雪东</p>
+							<p class="stuAnswer">This guy is fun~</p>
+							<p class="stuAnswer">That's cool ~</p>
+						</div>
+						<div class="aAns" data-sid=120126122>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第三组</p>
+							<p class="stuName">澎程程</p>
+							<p class="stuAnswer">英语课变得更有趣了</p>
+							
+						</div>
+						<div class="aAns" data-sid=120126123>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第六组</p>
+							<p class="stuName">荆雪茹</p>
+							<p class="stuAnswer">the man doesn't want more ...</p>
+						</div>
+						<div class="aAns" data-sid=120126121>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第七组</p>
+							<p class="stuName">陈晶洁</p>
+							<p class="stuAnswer">主人公习惯于依赖人工智能的管家完成一些事</p>
+						</div>
+						<div class="aAns" data-sid=120126129>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第一组</p>
+							<p class="stuName">昕力</p>
+							<p class="stuAnswer">Why it happends</p>
+						</div>
+						<div class="aAns" data-sid=120126128>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第四组</p>
+							<p class="stuName">于涛</p>
+							<p class="stuAnswer">机器为他做了太多的事情，以至于他失去了自己的能力，这是这个故事中最悲哀的一点</p>
+						</div>
+						<div class="aAns" data-sid=120126101>
+							<img class="avatar" src="css/screen/images/default_boy.jpg" />
+							<p class="stuClass">第九组</p>
+							<p class="stuName">叶忠强</p>
+							<p class="stuAnswer">I really wang to know how it works !</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- mrQ的覆盖层-->
+			<div id="mrQCover" class="aCover">
+				<div id="" class="">
+				</div>
+			</div>
+		</div>
+		<!-- 讨论组卡片的视图容器 -->
+		<div id="groupPage" class="aPage">
+			<!-- 讨论组所在容器 -->
+			<div id="" class="aContent">
+				<div id="roupId_3" class="aGroupCard" data-groupId=3 data-hot=200>
+					<h2 class="groupId">第三组</h2>
+					<div id="" class="aMember aceMember">
+						<h4 class="memberId">张鹏</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">贺康</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">陈晶洁</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">徐一超</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">澎程程</h4>
+					</div>
+				</div>
+				<div id="roupId_2" class="aGroupCard" data-groupId=2 data-hot=200>
+					<h2 class="groupId">第二组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">曹雪东</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">戴斌</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">高远</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">龙青</h4>
+					</div>
+				</div>
+				<div id="roupId_9" class="aGroupCard" data-groupId=9 data-hot=200>
+				<h2 class="groupId">第九组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">叶忠强</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">天赐</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">王石磊</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">冼伟强</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">吕敏</h4>
+					</div>
+				</div>
+				<div id="roupId_6" class="aGroupCard" data-groupId=6 data-hot=200>
+				<h2 class="groupId">第六组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">吴亮</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">照秀竣</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">冯少</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">刘知秀</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">贾尚云</h4>
+					</div>
+				</div>
+				<div id="roupId_7" class="aGroupCard" data-groupId=7 data-hot=200>
+				<h2 class="groupId">第七组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">王梅梅</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">冼伟强</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">王石磊</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">张鹏</h4>
+					</div>
+				</div>
+				<div id="roupId_8" class="aGroupCard" data-groupId=8 data-hot=200>
+				<h2 class="groupId">第八组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">刘茜</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">张倩</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">顾强</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">辛杰</h4>
+					</div>
+				</div>
+				<div id="roupId_5" class="aGroupCard" data-groupId=5 data-hot=200>
+				<h2 class="groupId">第五组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">高一力</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">周鑫</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">杨雄</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">晶亚楠</h4>
+					</div>
+				</div>
+				<div id="roupId_1" class="aGroupCard" data-groupId=1 data-hot=200>
+				<h2 class="groupId">第一组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">吴晓</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">吴波</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">任思明</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">嘉鹏</h4>
+					</div>
+				</div>
+				<div id="roupId_4" class="aGroupCard" data-groupId=4 data-hot=200>
+				<h2 class="groupId">第四组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">冯丽丽</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">金晶</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">贾存磊</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">肖刚</h4>
+					</div>
+				</div>
+				<div id="roupId_11" class="aGroupCard" data-groupId=11 data-hot=200>
+				<h2 class="groupId">第十一组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">冯丽丽</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">金晶</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">贾存磊</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">肖刚</h4>
+					</div>
+				</div>
+				<div id="roupId_10" class="aGroupCard" data-groupId=10 data-hot=200>
+				<h2 class="groupId">第十组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">冯丽丽</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">金晶</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">贾存磊</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">肖刚</h4>
+					</div>
+				</div>
+				<div id="roupId_12" class="aGroupCard" data-groupId=12 data-hot=200>
+				<h2 class="groupId">第十二组</h2>
+					<div id="" class="aMember">
+						<h4 class="memberId">冯丽丽</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">金晶</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">贾存磊</h4>
+					</div>
+					<div id="" class="aMember">
+						<h4 class="memberId">肖刚</h4>
+					</div>
+				</div>
+			</div>
+			<!-- 分组的覆盖层-->
+			<div id="groupCover" class="aCover">
+				<div id="groupTitle"  class="aMetro"></div>
+				<div id="groupIn" class="aMetro forStopJsPop"><ul id="groupSwitchCut" class="">
+					<li id="groupId_1" class="aGroupCut">
+						<div class="aMessage">
+							<div class="member">陈晶洁</div>
+							<div class="message">我们小组该准备点什么了，everybody 。。。</div>
+						</div>
+						<div class="aMessage">
+							<div class="member">王坤</div>
+							<div class="message">星期三的电影要如何演示？</div>
+						</div>
+						
+						<div class="aMessage">
+							<div class="member">天赐</div>
+							<div class="message">要不我们多解释下演员的背景吧！</div>
+						</div>
+						<div class="aMessage">
+							<div class="member">吕敏</div>
+							<div class="message">英语课变得更有趣了</div>
+						</div>
+					</li>
+					<li id="groupId_2" class="aGroupCut">
+						<div class="aMessage">
+							<div class="member">赵青</div>
+							<div class="message">that's really cool i think...</div>
+						</div>
+						<div class="aMessage">
+							<div class="member">戴敏杰</div>
+							<div class="message">everybody here who know this guy ??</div>
+						</div>
+						<div class="aMessage">
+							<div class="member">张思慈</div>
+							<div class="message">第四组的讨论似乎比我们更热烈</div>
+						</div>
+						<div class="aMessage">
+							<div class="member">吴烨</div>
+							<div class="message">can we see other group's infomation?</div>
+						</div>
+					</li>
+					<li id="groupId_3" class="aGroupCut">
+						<div class="aMessage">
+							<div class="member">叶忠强</div>
+							<div class="message">组长：角色的英文介绍我已经找好了</div>
+						</div>
+					</li>
+					<li id="groupId_4" class="aGroupCut"></li>
+					<li id="groupId_5" class="aGroupCut"></li>
+					<li id="groupId_6" class="aGroupCut"></li>
+					<li id="groupId_7" class="aGroupCut"></li>
+					<li id="groupId_8" class="aGroupCut"></li>
+					<li id="groupId_9" class="aGroupCut"></li>
+					<li id="groupId_10" class="aGroupCut"></li>
+					<li id="groupId_11" class="aGroupCut"></li>
+					<li id="groupId_12" class="aGroupCut"></li>
+					</ul></div>
+			</div>
+		</div>
+		
+		<!-- 视频功能的视图容器 -->
+		<div id="videoPage" class="aPage">
+			<!-- 显示层容器 -->
+			<div id="" class="aContent">
+				<!-- 显示区所在容器 -->
+				<div id="displayContainer" class="">
+					<div id="videoContainer">
+						<video id="thisVideo" width="" controls="controls" preload="preload">
+							
+							<source src="media/25d0d2b7ebdf08c8db11178174b4eb8b_1365416573.m4v" type="video/mp4" >
+							<source src="media/25d0d2b7ebdf08c8db11178174b4eb8b_1365416573.ogv" type="video/ogg" >
+							<!--source src="media/25d0d2b7ebdf08c8db11178174b4eb8b_1365416573.webm" type="video/webm" -->
+							<p>抱歉，你的浏览器不支持HTML5视频标准，推荐你使用较新版本的谷歌 Chrome 或者苹果 Safari 浏览器。</p>
+						</video>
+						<div id="ziMuContainer" class="mark">
+							<div id="en" class="aZiMu"></div>
+							<div id="ch" class="aZiMu"></div>
+						</div>
+					</div>
+					<div id="" class="controls">
+						
+						
+					</div>
+				</div>
+				<!-- 小组排名容器 -->
+				<div id="scoreboardContainer" class="">
+					<ul id="paiMin" class="">
+						<li id="" class="Ace"><div id="" class="">
+							<h3>第一组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class="second"><div id="" class="">
+							<h3>第二组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class="third"><div id="" class="">
+							<h3>第三组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class=""><div id="" class="">
+							<h3>第四组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class=""><div id="" class="">
+							<h3>第五组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class=""><div id="" class="">
+							<h3>第六组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class=""><div id="" class="">
+							<h3>第七组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class=""><div id="" class="">
+							<h3>第八组</h3>
+							<div id="" class=""></div>
+						</div></li>
+						<li id="" class=""><div id="" class="">
+							<h3>第九组</h3>
+							<div id="" class=""></div>
+						</div></li>
+					</ul>
+				</div>
+				<!-- 视频交互区容器 -->
+				<div id="msgContainer" class="">
+				</div>
+			</div>
+			<!-- 视频功能里的覆盖层 -->
+			<div id="Billboard" class="">
+				<div id="" class="">
+				</div>
+			</div>
+		</div>
+		<!-- 写字板视图容器 -->
+		<div id="writePage" class="aPage">
+			<!-- 所在容器 -->
+			<div id="writePadBox" class="aContent">
+				<textarea id="writePad" type="textarea" placeholder="史上最智能的写字板...不然你以为我是什么呢?"></textarea>
+			</div>
+			<!-- 覆盖层-->
+			<div id="writeCover" class="">
+				<div id="" class="">
+				</div>
+			</div>
+		</div>
+		<!-- PPT -->
+		<div id="PPT" class="aPage">
+			<div id="pptBox" class="aContent">
+				<video id="pptVideo" width="" preload="preload">		
+					<!--source src="media/ppt.m4v" type="video/mp4" -->
+					<!--source src="media/ppt.ogv" type="video/ogg" -->
+					<source src="media/ppt.ogv" type="video/ogg" >
+				</video>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+	</footer>
+	
+	<script type="text/javascript" src="js/lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.animate-colors-min.js"></script>
+	<script type="text/javascript" src="js/lib/popcorn-complete.js"></script>
+	
+	<!--script type="text/javascript" src="js/screen/videoControl.js"></script-->
+	<script type="text/javascript" src="js/screen/functionExecutionLib.js"></script>
+	<script type="text/javascript" src="js/screen/setAjax.js"></script>
+	<script type="text/javascript" src="js/screen/script.js"></script>
+</body>
+</html>
